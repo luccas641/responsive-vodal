@@ -1,6 +1,6 @@
 {
   "name": "responsive-vodal",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "A responsive vue modal with animations.",
   "main": "dist/index.js",
   "scripts": {
