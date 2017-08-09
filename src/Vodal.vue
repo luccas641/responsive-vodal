@@ -76,6 +76,7 @@ export default {
 <style>
 .vodal-dialog {
   width: 90%;
+  max-height: 70%;
 }
 
 @media (min-width: 768px) {
@@ -90,6 +91,12 @@ export default {
   .vodal-lg {
       width: 900px;
   }
+}
+
+.vodal-content{
+  max-height: calc(100% - 20px);
+  overflow: auto;
+  margin-top: 20px;
 }
 
 </style>
