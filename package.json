@@ -1,7 +1,7 @@
 {
-  "name": "vodal",
-  "version": "2.2.0",
-  "description": "A vue modal with animations.",
+  "name": "responsive-vodal",
+  "version": "0.0.0",
+  "description": "A responsive vue modal with animations.",
   "main": "dist/index.js",
   "scripts": {
     "dev": "node_modules/.bin/webpack-dev-server --config ./build/webpack.dev.conf.js",
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/chenjiahan/vodal.git"
+    "url": "git+https://github.com/luccas641/responsive-vodal.git"
   },
   "keywords": [
     "vue",
@@ -21,10 +21,6 @@
   ],
   "author": "neverland",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/chenjiahan/vodal/issues"
-  },
-  "homepage": "https://github.com/chenjiahan/vodal#readme",
   "dependencies": {
     "vue": "^2.3.0"
   },

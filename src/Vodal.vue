@@ -3,7 +3,7 @@
     <div v-show="show" tabindex="-1" :style="style" :class="['vodal', className]" @keyup.esc="show && $emit('hide')">
       <div class="vodal-mask" v-if="mask" @click="$emit('hide')" />
       <transition :name="`vodal-${animation}`">
-        <div class="vodal-dialog" v-show="show" :style="dialogStyle">
+        <div class="vodal-dialog" v-show="show">
           <span class="vodal-close" v-if="closeButton" @click="$emit('hide')" />
           <slot></slot>
         </div>
@@ -61,13 +61,6 @@ export default {
         animationDuration: `${this.duration}ms`
       };
     },
-    dialogStyle() {
-      return {
-        width: this.width + this.measure,
-        height: this.height + this.measure,
-        animationDuration: `${this.duration}ms`
-      }
-    }
   },
 
   watch: {
@@ -79,3 +72,24 @@ export default {
   }
 }
 </script>
+
+<style>
+.vodal-dialog {
+  width: 90%;
+}
+
+@media (min-width: 768px) {
+  .vodal-dialog {
+    width: 600px;
+  }
+  .vodal-sm {
+      width: 400px;
+  }
+}
+@media (min-width: 992px) {
+  .vodal-lg {
+      width: 900px;
+  }
+}
+
+</style>

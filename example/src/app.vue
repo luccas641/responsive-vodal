@@ -8,7 +8,7 @@
       </div>
       <vodal measure="em" :show="show" :animation="animation" :width="28.5" :height="17" :duration="301" className="my-dialog" @hide="show = false">
         <div class="header">Vodal</div>
-        <div class="body">A vue modal with animations.</div>
+        <div class="body">A vue modal with animations.<br><br>Dfgdfg</div>
         <button class="vodal-confirm-btn" @click="show = false">ok</button>
         <button class="vodal-cancel-btn" @click="show = false">close</button>
       </vodal>
@@ -18,7 +18,7 @@
 
 <script>
 import Vue from 'vue';
-import Vodal from '../../dist';
+import Vodal from '../../src';
 
 Vue.component(Vodal.name, Vodal);
 
