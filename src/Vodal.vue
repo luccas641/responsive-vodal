@@ -1,9 +1,9 @@
 <template>
   <transition name="vodal-fade">
-    <div v-show="show" tabindex="-1" :style="style" :class="['vodal', className]" @keyup.esc="show && $emit('hide')">
+    <div v-show="show" tabindex="-1" :style="style" class="vodal" @keyup.esc="show && $emit('hide')">
       <div class="vodal-mask" v-if="mask" @click="$emit('hide')" />
       <transition :name="`vodal-${animation}`">
-        <div class="vodal-dialog" v-show="show">
+        <div class="vodal-dialog" :class="[className]"  v-show="show">
           <span class="vodal-close" v-if="closeButton" @click="$emit('hide')" />
           <slot></slot>
         </div>
